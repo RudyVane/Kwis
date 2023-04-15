@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/science"
+    tools:context=".Kwis">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/kwizzie" />
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_nummer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+
+            <Button
+                android:id="@+id/textView_vragen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/vraag"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="normal">
+
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textAlignment="center"
+                android:text="A"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+
+            <Button
+                android:id="@+id/textView_antwoordA"
+                android:layout_width="fill_parent"
+                android:layout_height="24sp"
+
+                android:background="@color/vraag"
+                android:onClick="antwoordA"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="normal">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textAlignment="center"
+                android:text="B"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+            <Button
+                android:id="@+id/textView_antwoordB"
+                android:layout_width="fill_parent"
+                android:layout_height="24sp"
+                android:background="@color/vraag"
+                android:onClick="antwoordB"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="normal">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textAlignment="center"
+                android:text="C"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+            <Button
+                android:id="@+id/textView_antwoordC"
+                android:layout_width="fill_parent"
+                android:layout_height="24sp"
+
+                android:background="@color/vraag"
+                android:onClick="antwoordC"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="normal">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textAlignment="center"
+                android:text="D"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+            <Button
+                android:id="@+id/textView_antwoordD"
+                android:layout_width="fill_parent"
+                android:layout_height="24sp"
+
+                android:background="@color/vraag"
+                android:onClick="antwoordD"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="normal">
+
+            </Button>
+
+
+
+        <TextView
+            android:id="@+id/textView_Goed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </TextView>
+
+            <TextView
+                android:id="@+id/textView_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:onClick="next"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kwis</string>
+    <string name="button1">Volgende vraag</string>
+    <string name="logo">Todo</string>
+    <string name="vraag">vraag</string>
+
+
+</resources>
